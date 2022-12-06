@@ -48,4 +48,28 @@ function calcPrice (flavor1, flavor2) {
 
 let total = calcPrice(vanilla, strawberry)
 
-console.log('Your total today is $',total)
+//console.log('Your total today is $',total)
+function printLine () {
+let numberLine = []
+// populates numberLine array with numbers 1-100
+for ( a = 1; a <= 100; a++) {
+    numberLine.push(a)
+}
+
+    for(let i = 0; i < 100; i++) {
+//checks if number is a mutiple of 3&5 if true it will print FIZZBUZZ
+      if ((numberLine[i] %3 == 0) && (numberLine[i] %5 == 0)) {
+            console.log('FIZZBUZZ')
+//checks if number is a mutiple of 3 if true it will print FIZZ
+    } if (numberLine[i] %3 === 0) {
+        console.log('FIZZ')
+//checks if number is a mutiple of 5 if true it will print BUZZ
+    } else if (numberLine[i] %5 === 0){
+       console.log('BUZZ')
+//if none of the above conditions are met it will print the number
+    } else {
+        console.log(numberLine[i])
+    }
+}
+}
+printLine()
